@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Resume JD Fit Scorer
 emoji: 📄
@@ -43,3 +44,6 @@ B.E. Computer Engineering, TSEC Mumbai (2025–2029)
 Minor in AI & Data Science, IIT Mandi  
 [LinkedIn](https://linkedin.com/in/krishnayuvarajphirke) · [GitHub](https://github.com/krishnaphirke)
 
+=======
+# resume-jd-scorer
+>>>>>>> f64d9e2d50f1323333b3a08844c2c9069c78e49d
