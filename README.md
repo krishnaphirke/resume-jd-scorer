@@ -1,49 +1,88 @@
-<<<<<<< HEAD
----
-title: Resume JD Fit Scorer
-emoji: 📄
-colorFrom: blue
-colorTo: indigo
-sdk: streamlit
-app_file: app.py
-pinned: false
----
-
 # 📄 Resume / JD Fit Scorer
 
-An AI-powered tool that analyzes how well your resume matches a Job Description using **TF-IDF vectorization** and **cosine similarity**.
+> An AI-powered tool that analyzes how well a resume matches a Job Description using NLP techniques, semantic similarity, and keyword gap analysis.
 
-## Features
-- Upload your resume as PDF or DOCX
-- Paste any Job Description
-- Get an instant fit score with verdict
-- See exactly which JD keywords are missing from your resume
+---
 
-## How It Works
-1. Extracts and cleans text from your resume and the JD
-2. Vectorizes both using **TF-IDF** (Term Frequency-Inverse Document Frequency)
-3. Computes **cosine similarity** between the two vectors as the fit score
-4. Identifies high-value JD keywords absent from your resume
+## 🚀 Features
 
-> Note: Scores are relative, not absolute. A score of 20–40% indicates strong alignment in this model. TF-IDF cosine similarity naturally produces lower values due to vocabulary sparsity between resume and JD text.
+* 📤 Upload resumes in **PDF** or **DOCX** format
+* 📝 Paste any **Job Description**
+* 📊 Get an instant **Resume–JD Fit Score**
+* 🎯 Receive a clear match verdict
+* 🔍 Identify important keywords missing from your resume
+* 🤖 Semantic matching powered by **all-MiniLM-L6-v2**
+* ⚡ Clean and interactive Streamlit interface
 
-## Tech Stack
-`Python` · `Scikit-learn` · `Streamlit` · `pdfplumber` · `python-docx`
+---
 
-## Run Locally
+## 🧠 How It Works
+
+1. 📄 Extracts text from the uploaded resume
+2. 🧹 Cleans and preprocesses resume and JD text
+3. 📊 Uses **TF-IDF** to identify keyword overlap
+4. 🤖 Uses **Sentence Transformers** to measure semantic similarity
+5. 📐 Calculates cosine similarity scores
+6. 🔍 Highlights keywords present in the Job Description but absent from the resume
+7. 📈 Generates an overall Resume–JD Fit Score
+
+---
+
+## 🛠️ Tech Stack
+
+* 🐍 Python
+* 🎈 Streamlit
+* 🤖 Scikit-learn
+* 🧠 Sentence Transformers
+* 📄 pdfplumber
+* 📝 python-docx
+
+---
+
+## 📂 Project Structure
+
+```text
+resume-jd-scorer/
+│
+├── app.py
+├── scorer.py
+├── requirements.txt
+├── README.md
+```
+
+---
+
+## 💻 Run Locally
+
 ```bash
-git clone https://huggingface.co/spaces/YOUR_USERNAME/resume-jd-scorer
+git clone https://github.com/krishnaphirke/resume-jd-scorer.git
 cd resume-jd-scorer
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Built By
-**Krishna Yuvaraj Phirke**  
-B.E. Computer Engineering, TSEC Mumbai (2025–2029)  
-Minor in AI & Data Science, IIT Mandi  
-[LinkedIn](https://linkedin.com/in/krishnayuvarajphirke) · [GitHub](https://github.com/krishnaphirke)
+---
 
-=======
-# resume-jd-scorer
->>>>>>> f64d9e2d50f1323333b3a08844c2c9069c78e49d
+## 📌 Project Highlights
+
+* Combines keyword-based and semantic analysis for resume evaluation
+* Helps job seekers identify gaps between their resume and a target role
+* Provides actionable insights for improving ATS compatibility
+* Lightweight, practical, and easy to use
+* Deployed using Hugging Face Spaces
+
+---
+
+## 👨‍💻 Built By
+
+**Krishna Yuvaraj Phirke**
+
+🎓 B.E. Computer Engineering, TSEC Mumbai (2025–2029)
+
+🤖 Minor in AI & Data Science, IIT Mandi
+
+🔗 [LinkedIn](https://linkedin.com/in/krishnayuvarajphirke)
+
+---
+
+⭐ If you found this project useful, consider giving the repository a star.
